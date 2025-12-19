@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Gift, Home, Award, AlertTriangle, CheckCircle, Sparkles } from "lucide-react";
 
 const benefits = [
@@ -16,9 +17,20 @@ export default function CharityCardPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-900 to-dark-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/30 via-transparent to-transparent" />
+      <section className="py-20 relative overflow-hidden min-h-[60vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="Charity Card"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-900/90 via-dark-900/80 to-dark-950 z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/30 via-transparent to-transparent z-0" />
         
         {/* Decorative Elements */}
         <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl" />

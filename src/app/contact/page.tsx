@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { Phone, Mail, MapPin, Clock, Facebook, Instagram, Send } from "lucide-react";
 
 const contactInfo = [
@@ -27,9 +28,20 @@ export default function ContactPage() {
   return (
     <div className="pt-20">
       {/* Hero Section */}
-      <section className="py-20 relative overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-b from-dark-900 via-dark-900 to-dark-950" />
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent" />
+      <section className="py-20 relative overflow-hidden min-h-[60vh] flex items-center justify-center">
+        {/* Background Image */}
+        <div className="absolute inset-0 z-0">
+          <Image
+            src="/images/hero-bg.jpg"
+            alt="Contact Us"
+            fill
+            className="object-cover opacity-30"
+            priority
+          />
+        </div>
+
+        <div className="absolute inset-0 bg-gradient-to-b from-dark-900/90 via-dark-900/80 to-dark-950 z-0" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent z-0" />
         
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
