@@ -51,14 +51,25 @@ export default function CharityCardPage() {
             </h1>
 
             <p className="text-xl text-gray-400 max-w-2xl mx-auto mb-8 leading-relaxed">
-              من خلال مساهمة رمزية قدرها 3,000 دينار فقط، تكون شريكاً في دعم مشاريعنا الإنسانية، وترسم مستقبلاً أفضل لمن ينتظرون الأمل.
+              من خلال مساهمة رمزية، تكون شريكاً في دعم مشاريعنا الإنسانية، وترسم مستقبلاً أفضل لمن ينتظرون الأمل.
             </p>
 
-            {/* Price Card */}
-            <div className="inline-block p-8 rounded-2xl bg-dark-800/50 border border-amber-500/30 card-shadow mb-8">
-              <p className="text-gray-400 mb-2">قيمة المساهمة</p>
-              <p className="text-5xl md:text-6xl font-bold text-gradient">3,000</p>
-              <p className="text-xl text-amber-400 mt-2">دينار عراقي فقط</p>
+            {/* Price Cards */}
+            <div className="flex flex-col md:flex-row items-center justify-center gap-6 mb-8">
+              {/* Card 3,000 */}
+              <div className="w-full md:w-auto p-8 rounded-2xl bg-dark-800/50 border border-amber-500/30 card-shadow hover:scale-105 transition-transform duration-300">
+                <p className="text-gray-400 mb-2">بطاقة الخير</p>
+                <p className="text-5xl md:text-6xl font-bold text-gradient">3,000</p>
+                <p className="text-xl text-amber-400 mt-2">دينار عراقي</p>
+              </div>
+
+              {/* Card 25,000 */}
+              <div className="w-full md:w-auto p-8 rounded-2xl bg-dark-800/50 border border-amber-500/30 card-shadow hover:scale-105 transition-transform duration-300 relative overflow-hidden">
+                <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-amber-400 to-amber-600" />
+                <p className="text-gray-400 mb-2">بطاقة العطاء</p>
+                <p className="text-5xl md:text-6xl font-bold text-gradient">25,000</p>
+                <p className="text-xl text-amber-400 mt-2">دينار عراقي</p>
+              </div>
             </div>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4">

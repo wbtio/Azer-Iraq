@@ -157,7 +157,7 @@ export default function HomePage() {
             </h2>
             
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
-              من خلال مساهمة رمزية قدرها 3,000 دينار فقط، تكون شريكاً في دعم مشاريعنا الإنسانية، وترسم مستقبلاً أفضل لمن ينتظرون الأمل.
+              من خلال مساهمة رمزية، تكون شريكاً في دعم مشاريعنا الإنسانية، وترسم مستقبلاً أفضل لمن ينتظرون الأمل.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
