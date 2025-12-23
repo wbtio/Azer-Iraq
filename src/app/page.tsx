@@ -44,11 +44,11 @@ export default function HomePage() {
             priority
           />
         </div>
-        
+
         {/* Background Gradient Overlay */}
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/90 via-dark-900/80 to-dark-950 z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent z-0" />
-        
+
         {/* Decorative Elements */}
         <div className="absolute top-1/4 right-1/4 w-72 h-72 bg-amber-500/10 rounded-full blur-3xl z-0" />
         <div className="absolute bottom-1/4 left-1/4 w-96 h-96 bg-amber-600/10 rounded-full blur-3xl z-0" />
@@ -79,7 +79,7 @@ export default function HomePage() {
                 href="/charity-card"
                 className="group inline-flex items-center gap-3 px-8 py-4 gold-gradient text-dark-900 font-bold rounded-full hover:opacity-90 transition-all text-lg shadow-lg shadow-amber-500/20"
               >
-                اشترِ بطاقة الدعم الخيري الآن
+                ساهم في بطاقة الدعم الخيرية الآن
                 <ArrowLeft size={20} className="group-hover:-translate-x-1 transition-transform" />
               </Link>
               <Link
@@ -121,8 +121,8 @@ export default function HomePage() {
                 {/* Image Container */}
                 <div className="relative h-48 w-full overflow-hidden">
                   <div className="absolute inset-0 bg-gradient-to-t from-dark-900 via-transparent to-transparent z-10" />
-                  <Image 
-                    src={feature.image} 
+                  <Image
+                    src={feature.image}
                     alt={feature.title}
                     fill
                     className="object-cover group-hover:scale-110 transition-transform duration-500"
@@ -151,23 +151,23 @@ export default function HomePage() {
               <Gift size={16} className="text-amber-400" />
               <span className="text-amber-400 text-sm font-medium">مشروع بطاقة الدعم الخيري</span>
             </div>
-            
+
             <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
               بطاقة صغيرة... <span className="text-gradient">لكن أثرها كبير</span>
             </h2>
-            
+
             <p className="text-lg text-gray-400 mb-8 max-w-2xl mx-auto">
               من خلال مساهمة رمزية، تكون شريكاً في دعم مشاريعنا الإنسانية، وترسم مستقبلاً أفضل لمن ينتظرون الأمل.
             </p>
 
             <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-8">
               <div className="px-6 py-3 rounded-xl bg-dark-800 border border-amber-500/30">
-                <p className="text-sm text-gray-400">الجائزة الكبرى</p>
-                <p className="text-xl font-bold text-gradient">وحدة سكنية جاهزة</p>
+                <p className="text-sm text-gray-400">الهدية الكبرى</p>
+                <p className="text-xl font-bold text-gradient">وحدة سكنية لعائلة من المحتاجين</p>
               </div>
               <div className="px-6 py-3 rounded-xl bg-dark-800 border border-amber-500/30">
                 <p className="text-sm text-gray-400">جوائز إضافية</p>
-                <p className="text-xl font-bold text-gradient">100 جائزة متنوعة</p>
+                <p className="text-xl font-bold text-gradient">جوائز أخرى</p>
               </div>
             </div>
 

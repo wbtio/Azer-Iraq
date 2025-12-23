@@ -58,11 +58,11 @@ export default function ProjectsPage() {
 
         <div className="absolute inset-0 bg-gradient-to-b from-dark-900/90 via-dark-900/80 to-dark-950 z-0" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-900/20 via-transparent to-transparent z-0" />
-        
+
         <div className="container mx-auto px-4 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6">
-              <span className="text-gradient">مشاريعنا</span>
+              <span className="text-gradient">نشاط المؤسسة</span>
             </h1>
             <p className="text-xl text-gray-400 leading-relaxed">
               نعمل على عدة محاور لتقديم المساعدة للمحتاجين وتحسين حياتهم من خلال مشاريع متنوعة ومستدامة.
@@ -131,7 +131,7 @@ export default function ProjectsPage() {
           <div className="max-w-2xl mx-auto">
             <Heart size={48} className="text-amber-400 mx-auto mb-6" />
             <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
-              ساهم في <span className="text-gradient">مشاريعنا</span>
+              ساهم في <span className="text-gradient">نشاطنا</span>
             </h2>
             <p className="text-gray-400 mb-8">
               مساهمتك تصنع الفرق في حياة المحتاجين. انضم إلينا اليوم وكن جزءاً من رحلة العطاء.

@@ -7,8 +7,8 @@ import { Menu, X } from "lucide-react";
 const navLinks = [
   { href: "/", label: "الرئيسية" },
   { href: "/about", label: "من نحن" },
-  { href: "/projects", label: "مشاريعنا" },
-  { href: "/charity-card", label: "بطاقة الدعم الخيري" },
+  { href: "/activities", label: "نشاطات المؤسسة" },
+  { href: "/charity-card", label: "بطاقة الدعم الخيرية" },
   { href: "/contact", label: "تواصل معنا" },
 ];
 
@@ -21,9 +21,11 @@ export default function Header() {
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-3">
-            <div className="w-12 h-12 rounded-full gold-gradient flex items-center justify-center">
-              <span className="text-dark-900 font-bold text-xl">أزر</span>
-            </div>
+            <img
+              src="/ذهبي-مفرغ.svg"
+              alt="مؤسسة أزر"
+              className="h-14 w-auto"
+            />
             <div className="hidden sm:block">
               <h1 className="text-lg font-bold text-gradient">مؤسسة أزر</h1>
               <p className="text-xs text-gray-400">للمساعدات الإنسانية</p>

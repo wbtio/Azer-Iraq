@@ -35,3 +35,20 @@ body {
     box-shadow: 0 10px 40px rgba(251, 191, 36, 0.15);
   }
 }
+
+/* Fix Arabic font clipping for headings */
+h1, h2, h3, h4, h5, h6 {
+  line-height: 1.5;
+  padding-top: 0.25em;
+}
+
+/* Payment methods styling */
+.payment-icon {
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: linear-gradient(135deg, #1e293b 0%, #334155 100%);
+}
